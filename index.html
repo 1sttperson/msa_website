@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Bootstrap Example</title>
+  <title>Bill Generator</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -16,6 +16,17 @@
 </head>
 
 <body>
+
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
   <div class="container">
     <h1 align="center">Bill Generator</h1>
   </div>
@@ -30,6 +41,7 @@
           <input type="radio" name="gender" value="m" checked> Male
           <input type="radio" name="gender" value="f"> Female
           <button id="sendRequest">Get Meme</button>
+          <div class="fb-share-button" data-href="http://1337420.azurewebsites.net/" data-layout="button_count" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F1337420.azurewebsites.net%2F&amp;src=sdkpreparse">Share</a></div>
         </div>
       </div>
       <div class="col-sm-4">
