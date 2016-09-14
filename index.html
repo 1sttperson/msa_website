@@ -1,25 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <link href="css/style.css" rel="stylesheet">
 
-  <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
-  <!-- <script src="https://cdn.jsdelivr.net/lodash/4.14.1/lodash.min.js"> -->
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
   <script src="scripts/main.js"></script>
 </head>
+
 <body>
+  <div class="container">
+    <h1 align="center">Bill Generator</h1>
+  </div>
+  <div class="container" id="bootstrapContainer">
+    <div class="row">
+      <div class="col-sm-8">
+        <img id="billImage" src="http://belikebill.azurewebsites.net/billgen-API.php?text=This is you.%0D%0AYou will enter your name and gender to get a meme%0D%0A%0D%0AYou are cool.%0D%0ABe like you."
+        />
+        <div id="infoBar">
+          <label>Name: </label>
+          <input id="nameField" type="text" />
+          <input type="radio" name="gender" value="m" checked> Male
+          <input type="radio" name="gender" value="f"> Female
+          <button id="sendRequest">Get Meme</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <h3>About this meme</h3>
+        Be Like Bill is an exploitable stick figure illustration of a man named “Bill” using a desktop computer, accompanied by a
+        parable praising Bill’s choice to simply carry on after being provoked by a trigger while browsing the Internet.
+        Since its emergence through English-language humor websites in late 2015, the single-pane comic has gone globally
+        viral and spawned a large volume of derivative illustrations with similar messages highlighting other socially intelligent
+        behaviors on the web and in real life.
+      </div>
+    </div>
+    <div class="row">
 
-<div class="container">
-  <h1>Meme generator 5000</h1>
-  <p>shrek is life</p>
-</div>
-
+    </div>
+  </div>
 </body>
+
 </html>
